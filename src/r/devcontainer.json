@@ -1,0 +1,17 @@
+{
+	"name": "R",
+	"image": "ghcr.io/rocker-org/devcontainer/${templateOption:baseVariant}:${templateOption:imageVariant}",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "${templateOption:nodeVersion}"
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "R --version",
+
+	"remoteUser": "rstudio"
+}
