@@ -1,0 +1,24 @@
+{
+	"image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mads-hartmann.bash-ide-vscode",
+				"EditorConfig.EditorConfig",
+				"foxundermoon.shell-format",
+				"timonwong.shellcheck",
+				"redhat.vscode-yaml"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			}
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-from-docker:1": {
+			"version": "latest"
+		}
+	},
+	"remoteUser": "node",
+	"postCreateCommand": "npm install -g @devcontainers/cli"
+}
