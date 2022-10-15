@@ -1,5 +1,5 @@
 {
-	"name": "R",
+	"name": "R (rocker/r-ver base)",
 	"image": "ghcr.io/rocker-org/devcontainer/${templateOption:baseVariant}:${templateOption:imageVariant}",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {
