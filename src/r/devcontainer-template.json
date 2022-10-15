@@ -2,7 +2,7 @@
 	"id": "r",
 	"version": "0.1.0",
 	"name": "R",
-	"description": "Editing R codes on a container. Includes many R packages from the start.",
+	"description": "A container-based development environment for the R language. Includes many commonly used R packages.",
 	"documentationURL": "https://github.com/rocker-org/devcontainer-templates/tree/main/src/r",
 	"publisher": "Rocker Project",
 	"licenseURL": "https://github.com/rocker-org/devcontainer-templates/blob/main/LICENSE",
