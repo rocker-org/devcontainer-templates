@@ -1,9 +1,10 @@
 # Development Container Templates (for R)
 
-This repository contains a set of dev container templates,
+This repository contains a set of Dev Container Templates,
 to using containers built from [rocker-org/devcontainer-images](https://github.com/rocker-org/devcontainer-images).
 
-For a detailed explanation of devcontainer templates,
-please check [the devcontainers' official devcontainer templages repository](https://github.com/devcontainers/templates).
+This repository is based on
+[the `devcontainers/templates` repository](https://github.com/devcontainers/templates) and
+[the `devcontainers/template-starter` repository](https://github.com/devcontainers/template-starter).
 
 Heavily under development.
