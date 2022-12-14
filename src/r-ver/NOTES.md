@@ -8,17 +8,12 @@ can be used to install `jupyterlab` and `IRkernel`.
 
 ```json
 {
-    "name": "R (rocker/r-ver base)",
     "image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
     "features": {
-        "ghcr.io/devcontainers/features/node:1": {
-            "version": "lts"
-        },
         "ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
             "version": "none",
             "installJupyterlab": true
         }
-    },
-    "remoteUser": "rstudio"
+    }
 }
 ```
