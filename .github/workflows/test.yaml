@@ -6,6 +6,7 @@ on:
     paths:
       - src/**
       - test/**
+      - "!**.md"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
