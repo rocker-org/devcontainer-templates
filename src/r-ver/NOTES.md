@@ -10,7 +10,7 @@ If you want to install R packages via Dev Container Features,
 you can use [the `ghcr.io/rocker-org/devcontainer-features/r-packages` Feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/r-packages).
 
 The images used in this template support installation of system dependencies via the `pak::pak()` function,
-so the R packages should be installed with `devcontainer.json` like below.
+so the R packages can be installed with `devcontainer.json` like below.
 
 ```json
 {
