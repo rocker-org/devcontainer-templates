@@ -9,7 +9,6 @@ A container-based development environment for the R language. Includes many comm
 |-----|-----|-----|-----|
 | imageVariant | R version: | string | 4 |
 | baseVariant | Base image. Minimal (r-ver), tidyverse installed (tidyverse), or full image (geospatial). Only r-ver supports the arm64 platform: | string | r-ver |
-| nodeVersion | Node.js version: | string | lts |
 
 <!-- markdownlint-disable MD041 -->
 
