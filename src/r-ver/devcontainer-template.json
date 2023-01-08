@@ -26,19 +26,6 @@
 				"geospatial"
 			],
 			"default": "r-ver"
-		},
-		"nodeVersion": {
-			"type": "string",
-			"description": "Node.js version:",
-			"proposals": [
-				"none",
-				"lts",
-				"latest",
-				"18",
-				"16",
-				"14"
-			],
-			"default": "lts"
 		}
 	},
 	"platforms": [
