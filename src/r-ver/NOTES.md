@@ -14,7 +14,8 @@ allow R package installation to be defined on `devcontainer.json`.
 If you want to install R packages via Dev Container Features,
 you can use [the `ghcr.io/rocker-org/devcontainer-features/r-packages` Feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/r-packages).
 
-The images used in this template support installation of system dependencies via the `pak::pak()` function,
+The images used in this template support installation of system dependencies
+via the [`pak::pak()`](https://pak.r-lib.org/reference/pak.html) function,
 so the R packages can be installed with `devcontainer.json` like below.
 
 ```json
@@ -34,8 +35,9 @@ so the R packages can be installed with `devcontainer.json` like below.
 [The `ghcr.io/rocker-org/devcontainer-features/renv-cache` Feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/renv-cache)
 can be used to store caches of R packages in a Docker volume.
 
-For example, when used in the development of an R package, all dependent packages can be installed
-via the `renv::install()` function by setting `postCreateCommand` as follows.
+For example, when used in the development of an R package, all dependent packages in the project `DESCRIPTION` file
+can be installed via the [`renv::install()`](https://rstudio.github.io/renv/reference/install.html) function
+by setting `postCreateCommand` as follows.
 
 ```json
 {
