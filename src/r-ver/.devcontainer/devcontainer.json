@@ -1,13 +1,16 @@
 {
 	"name": "R (rocker/r-ver base)",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "ghcr.io/rocker-org/devcontainer/${templateOption:baseVariant}:${templateOption:imageVariant}",
-	"features": {}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "R --version",
+	// "postCreateCommand": "R -q -e 'renv::install()'",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
