@@ -6,5 +6,3 @@ to using containers built from [rocker-org/devcontainer-images](https://github.c
 This repository is based on
 [the `devcontainers/templates` repository](https://github.com/devcontainers/templates) and
 [the `devcontainers/template-starter` repository](https://github.com/devcontainers/template-starter).
-
-Heavily under development.
