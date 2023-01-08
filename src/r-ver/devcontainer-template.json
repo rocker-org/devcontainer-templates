@@ -1,6 +1,6 @@
 {
 	"id": "r-ver",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"name": "R (rocker/r-ver base)",
 	"description": "A container-based development environment for the R language. Includes many commonly used R packages.",
 	"documentationURL": "https://github.com/rocker-org/devcontainer-templates/tree/main/src/r-ver",
@@ -26,19 +26,6 @@
 				"geospatial"
 			],
 			"default": "r-ver"
-		},
-		"nodeVersion": {
-			"type": "string",
-			"description": "Node.js version:",
-			"proposals": [
-				"none",
-				"lts",
-				"latest",
-				"18",
-				"16",
-				"14"
-			],
-			"default": "lts"
 		}
 	},
 	"platforms": [
