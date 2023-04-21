@@ -1,6 +1,6 @@
 {
 	"id": "r-ver",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"name": "R (rocker/r-ver base)",
 	"description": "A container-based development environment for the R language. Includes many commonly used R packages.",
 	"documentationURL": "https://github.com/rocker-org/devcontainer-templates/tree/main/src/r-ver",
@@ -12,8 +12,8 @@
 			"description": "R version:",
 			"proposals": [
 				"4",
-				"4.2",
-				"4.1"
+				"4.3",
+				"4.2"
 			],
 			"default": "4"
 		},
