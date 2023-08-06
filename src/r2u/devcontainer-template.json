@@ -1,0 +1,23 @@
+{
+	"id": "r2u",
+	"version": "0.1.0",
+	"name": "R (r2u and bspm configured)",
+	"description": "A container-based development environment for the R language. Installs binary packages powered by r2u and bspm.",
+	"documentationURL": "https://github.com/rocker-org/devcontainer-templates/tree/main/src/r2u",
+	"publisher": "Rocker Project",
+	"licenseURL": "https://github.com/rocker-org/devcontainer-templates/blob/main/LICENSE",
+	"options": {
+		"imageVariant": {
+			"type": "string",
+			"description": "Ubuntu version:",
+			"proposals": [
+				"jammy",
+				"focal"
+			],
+			"default": "jammy"
+		}
+	},
+	"platforms": [
+		"R"
+	]
+}

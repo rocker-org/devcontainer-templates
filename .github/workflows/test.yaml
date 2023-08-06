@@ -23,6 +23,7 @@ jobs:
         with:
           filters: |
             r-ver: ./**/r-ver/**
+            r2u: ./**/r2u/**
 
   test-detects:
     if: ${{ github.event_name == 'pull_request' }}
