@@ -2,7 +2,7 @@
 	"id": "r2u",
 	"version": "0.1.0",
 	"name": "R (r2u and bspm configured)",
-	"description": "A container-based development environment for the R language, powered by r2u and bspm. Only supports amd64.",
+	"description": "Install R on Ubuntu and set r2u and bspm. (Only supports amd64)",
 	"documentationURL": "https://github.com/rocker-org/devcontainer-templates/tree/main/src/r2u",
 	"publisher": "Rocker Project",
 	"licenseURL": "https://github.com/rocker-org/devcontainer-templates/blob/main/LICENSE",
