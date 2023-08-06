@@ -4,11 +4,12 @@
 
 Please check <https://github.com/devcontainers/images/tree/main/src/base-ubuntu>.
 
-This template pulls the `linux/amd64` platform image because `r2u` only supports `linux/amd64` platform.
+This template pulls the `linux/amd64` platform image because
+[`r2u`](https://github.com/eddelbuettel/r2u) only supports `linux/amd64` platform.
 
 ## Install R packages
 
-Since `bspm` is enabled, the binary R packages (from `r2u` repository)and system dependencies can be installed
+Since `bspm` is enabled, the binary R packages (from `r2u` repository) and system dependencies can be installed
 via the `install.package` R function.
 
 ## Use [Jupyter](https://jupyter.org/)
