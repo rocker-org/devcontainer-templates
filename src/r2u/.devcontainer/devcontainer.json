@@ -2,8 +2,9 @@
 // README at: https://github.com/rocker-org/devcontainer-templates/tree/main/src/r2u
 {
 	"name": "R (r2u and bspm configured)",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:${templateOption:imageVariant}",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
