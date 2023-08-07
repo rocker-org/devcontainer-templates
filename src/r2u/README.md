@@ -1,0 +1,49 @@
+
+# R (r2u and bspm configured) (r2u)
+
+Install R on Ubuntu and set r2u and bspm. (Only supports amd64)
+
+## Options
+
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| imageVariant | Ubuntu version: | string | jammy |
+
+<!-- markdownlint-disable MD041 -->
+
+## About the base image
+
+Please check <https://github.com/devcontainers/images/tree/main/src/base-ubuntu>.
+
+This template pulls the `linux/amd64` platform image because
+[`r2u`](https://github.com/eddelbuettel/r2u) only supports `linux/amd64` platform.
+
+## Install R packages
+
+Since `bspm` is enabled, the binary R packages (from `r2u` repository) and system dependencies can be installed
+via the `install.package` R function.
+
+## Use [Jupyter](https://jupyter.org/)
+
+The `InstallJupyterlab` option of
+[the `ghcr.io/rocker-org/devcontainer-features/r-apt` Feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/r-apt)
+can be used to install `jupyterlab` and `IRkernel`.
+
+Only add `"installJupyterlab": true` to `devcontainer.json` like below.
+
+```jsonc
+"ghcr.io/rocker-org/devcontainer-features/r-apt:0": {
+    "vscodeRSupport": "full",
+    "installDevTools": true,
+    "installRMarkdown": true,
+    "installRadian": true,
+    "installVscDebugger": true,
+    "installBspm": true,
+    "installJupyterlab": true // This line
+}
+```
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/rocker-org/devcontainer-templates/blob/main/src/r2u/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
