@@ -63,9 +63,23 @@ by setting `postCreateCommand` as follows.
 
 The package cache is shared by all containers on the same machine, so later builds can be faster.
 
+## Use [RStudio Server](https://posit.co/products/open-source/rstudio-server/)
+
+[The `ghcr.io/rocker-org/devcontainer-features/rstudio-server` Feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/rstudio-server)
+can be used to install and configure RStudio Server.
+
+```json
+{
+    "image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
+    "features": {
+        "ghcr.io/rocker-org/devcontainer-features/rstudio-server:latest": {}
+    }
+}
+```
+
 ## Use [Jupyter](https://jupyter.org/)
 
-[The `ghcr.io/rocker-org/devcontainer-features/r-rig` feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/r-rig)
+[The `ghcr.io/rocker-org/devcontainer-features/r-rig` Feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/r-rig)
 can be used to install `jupyterlab` and `IRkernel`.
 (Remember to set `"version": "none"` for not to install another R)
 
@@ -77,6 +91,21 @@ can be used to install `jupyterlab` and `IRkernel`.
             "version": "none",
             "installJupyterlab": true
         }
+    }
+}
+```
+
+## Make R console history persistent
+
+Normally the R console history is lost when we recreate the container,
+but we can preserve the history with
+[The `ghcr.io/rocker-org/devcontainer-features/r-history` Feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/r-history).
+
+```json
+{
+    "image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
+    "features": {
+        "ghcr.io/rocker-org/devcontainer-features/r-history:0": {}
     }
 }
 ```
