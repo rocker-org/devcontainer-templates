@@ -1,7 +1,7 @@
 
 # R (r2u and bspm configured) (r2u)
 
-Install R on Ubuntu and set r2u and bspm. (Only supports amd64)
+Install R on Ubuntu and set r2u and bspm.
 
 ## Options
 
@@ -14,9 +14,6 @@ Install R on Ubuntu and set r2u and bspm. (Only supports amd64)
 ## About the base image
 
 Please check <https://github.com/devcontainers/images/tree/main/src/base-ubuntu>.
-
-This template pulls the `linux/amd64` platform image because
-[`r2u`](https://github.com/eddelbuettel/r2u) only supports `linux/amd64` platform.
 
 ## Install R packages
 
