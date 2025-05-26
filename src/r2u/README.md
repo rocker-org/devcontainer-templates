@@ -7,7 +7,7 @@ Install R on Ubuntu and set r2u and bspm.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| imageVariant | Ubuntu version: | string | jammy |
+| imageVariant | Ubuntu version: | string | noble |
 
 <!-- markdownlint-disable MD041 -->
 
