@@ -11,8 +11,8 @@
 			"type": "string",
 			"description": "Ubuntu version:",
 			"proposals": [
-				"jammy",
-				"noble"
+				"noble",
+				"jammy"
 			],
 			"default": "noble"
 		}
