@@ -1,6 +1,6 @@
 {
 	"id": "r2u",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"name": "R (r2u and bspm configured)",
 	"description": "Install R on Ubuntu and set r2u and bspm.",
 	"documentationURL": "https://github.com/rocker-org/devcontainer-templates/tree/main/src/r2u",
@@ -12,9 +12,9 @@
 			"description": "Ubuntu version:",
 			"proposals": [
 				"jammy",
-				"focal"
+				"noble"
 			],
-			"default": "jammy"
+			"default": "noble"
 		}
 	},
 	"platforms": [
