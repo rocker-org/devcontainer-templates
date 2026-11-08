@@ -9,7 +9,7 @@
 	"features": {
 		// A Feature to configure R on Ubuntu. More info: https://github.com/rocker-org/devcontainer-features/tree/main/src/r-apt.
 		"ghcr.io/rocker-org/devcontainer-features/r-apt:1": {
-			"vscodeRSupport": "lsp",
+			"vscodeRSupport": "full",
 			"installDevTools": true,
 			"installRMarkdown": true,
 			"installBspm": true,
