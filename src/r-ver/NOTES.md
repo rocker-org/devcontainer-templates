@@ -18,13 +18,12 @@ The images used in this template support installation of system dependencies
 via the [`pak::pak()`](https://pak.r-lib.org/reference/pak.html) function,
 so the R packages can be installed with `devcontainer.json` like below.
 
-```json
+```jsonc
 {
     "image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
     "features": {
-        "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
-            "packages": "cli,rlang",
-            "installSystemRequirements": true
+        "ghcr.io/rocker-org/devcontainer-features/r-packages:2": {
+            "packages": "cli,rlang"
         }
     }
 }
@@ -61,24 +60,6 @@ can be used to install and configure RStudio Server.
     "image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
     "features": {
         "ghcr.io/rocker-org/devcontainer-features/rstudio-server:latest": {}
-    }
-}
-```
-
-## Use [Jupyter](https://jupyter.org/)
-
-[The `ghcr.io/rocker-org/devcontainer-features/r-rig` Feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/r-rig)
-can be used to install `jupyterlab` and `IRkernel`.
-(Remember to set `"version": "none"` for not to install another R)
-
-```json
-{
-    "image": "ghcr.io/rocker-org/devcontainer/r-ver:4",
-    "features": {
-        "ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
-            "version": "none",
-            "installJupyterlab": true
-        }
     }
 }
 ```
