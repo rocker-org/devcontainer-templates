@@ -16,35 +16,13 @@ can be used to install and configure RStudio Server.
 
 ```jsonc
 "features": {
-    "ghcr.io/rocker-org/devcontainer-features/r-apt:0": {
+    "ghcr.io/rocker-org/devcontainer-features/r-apt:1": {
         "vscodeRSupport": "full",
         "installDevTools": true,
         "installRMarkdown": true,
-        "installRadian": true,
-        "installVscDebugger": true,
         "installBspm": true,
     },
     "ghcr.io/rocker-org/devcontainer-features/rstudio-server:latest": {} // This line
-}
-```
-
-## Use [Jupyter](https://jupyter.org/)
-
-The `InstallJupyterlab` option of
-[the `ghcr.io/rocker-org/devcontainer-features/r-apt` Feature](https://github.com/rocker-org/devcontainer-features/tree/main/src/r-apt)
-can be used to install `jupyterlab` and `IRkernel`.
-
-Only add `"installJupyterlab": true` to `devcontainer.json` like below.
-
-```jsonc
-"ghcr.io/rocker-org/devcontainer-features/r-apt:0": {
-    "vscodeRSupport": "full",
-    "installDevTools": true,
-    "installRMarkdown": true,
-    "installRadian": true,
-    "installVscDebugger": true,
-    "installBspm": true,
-    "installJupyterlab": true // This line
 }
 ```
 
@@ -56,12 +34,10 @@ but we can preserve the history with
 
 ```jsonc
 "features": {
-    "ghcr.io/rocker-org/devcontainer-features/r-apt:0": {
+    "ghcr.io/rocker-org/devcontainer-features/r-apt:1": {
         "vscodeRSupport": "full",
         "installDevTools": true,
         "installRMarkdown": true,
-        "installRadian": true,
-        "installVscDebugger": true,
         "installBspm": true,
     },
     "ghcr.io/rocker-org/devcontainer-features/r-history:0": {} // This line
