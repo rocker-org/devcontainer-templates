@@ -12,6 +12,7 @@
 			"vscodeRSupport": "lsp",
 			"installDevTools": true,
 			"installRMarkdown": true,
+			"installBspm": true,
 			"arfVersion": "latest"
 		}
 	},
